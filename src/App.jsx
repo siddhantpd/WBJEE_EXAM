@@ -61,7 +61,7 @@ function App() {
   };
 
   return (
-    <HashRoutes>
+    <Routes>
       <Route path="/" element={<TestList onAttempt={handleAttempt} />} />
       <Route
         path="/attempt/:index"
@@ -69,7 +69,7 @@ function App() {
           <AttemptPage testIndex={attemptIndex} />
         }
       />
-    </HashRoutes>
+    </Routes>
   );
 }
 
